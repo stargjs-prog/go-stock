@@ -9,12 +9,12 @@ export default defineConfig({
   plugins: [
       vue(),
       AutoImport({
-          resolvers: [TDesignResolver({
+          resolvers: [TDesignResolver({ library: 'vue-next' }), TDesignResolver({
               library: 'chat'
           })],
       }),
       Components({
-          resolvers: [TDesignResolver({
+          resolvers: [TDesignResolver({ library: 'vue-next' }), TDesignResolver({
               library: 'chat'
           })],
       }),

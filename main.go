@@ -74,7 +74,6 @@ func main() {
 
 	checkDir("data")
 	machineid.Init(BuildKey)
-	data.SponsorDecryptKeyHex = BuildKey
 	data.SetAppIcon(icon)
 	db.Init("")
 	data.InitAnalyzeSentiment()
